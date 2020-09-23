@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szymon Korzonek</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/main-style.css">
+    <script src="https://kit.fontawesome.com/136bdef65c.js"></script>
+    <script src="scripts.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav> <!-- NAVBAR -->
+        <div class='toggle'>
+            <a id="brand">S. KORZONEK</a>
+            <i id="button" class="fa fa-bars" aria-hidden="true" onclick="toggle()"></i>
+
+            <ul id="ul">
+                <li><a class="nav-links" href="#home" onclick="toggle()">HOME</a></li>
+                <li><a class="nav-links" href="#portfolio" onclick="toggle()">PORTFOLIO</a></li>
+                <li><a class="nav-links" href="#contact" onclick="toggle()">CONTACT</a></li>
+                <li><a class="nav-links" href="#about" onclick="toggle()">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--HOME SECTION-->
+    <div id="home" class="slide">
+        <div class="section" id="home-section">
+            <img id="my-pic" alt="Portrait photo" src="static/me-low-rez.jpg">
+            <h1 class="welcome-header" id="welcome-h1">Szymon Korzonek</h1>
+            <h2 class="welcome-header" id="welcome-h2">junior backend / fullstack developer</h2>
+
+            <p id="welcome-text">PYTHON | DJANGO | FLASK | SQL | HTML | CSS | JS | GIT</p><br>
+
+            <div style="text-align: center;">
+                <a id="welcome-link" href="#about">more about me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio" class="slide">
+        <div class="section" id="portfolio-section">
+            <h1 id="projects-header">My projects</h1>
+            <p id="portfolio-text"></p>
+            <div class="container">
+
+                <div class="row">
+                    <!-- SOUNDGRAM -->
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="soundgram-header">SOUNDGRAM</h2>
+                        <div class="icon" id="soundgram-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <p class="card-text">Simple social media app. Adressing space between Instagram and SoundCloud. Ended up with simple SM app with basic funcionalities and tons of things to add or improve.</p>
+                        <div class="project-buttons">
+                            <a class="link" href="http://umarnaraka.pythonanywhere.com">Website</a>
+                            <a class="link" href="soundgram.html">More</a>
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/soundgram">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+
+                    <!-- WILLY -->
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="willy-header">WILLY</h2>
+                        <div class="icon" id="willy-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <p class="card-text">AI chatbot with rule-based virtual assistant functionalities. Dear friend and child of mine. Made with <i id="heart" class="fas fa-heart"></i> using Python & Tensorflow. Integrated with google calendar API</p>
+                        <div class="project-buttons">
+                            <a class="link" href="willy.html">More</a>
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/willy">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEEPDREAM -->
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="deepdream-header">DEEPDREAM</h2>
+                        <div class="icon" id="deepdream-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <p class="card-text">Deepdream of InveptionV3 neural network model. Program allowes to dreamify source image with pre-adjusted parameters. Python using Tensorflow & Keras backend</p>
+                        <div class="project-buttons">
+                            <a class="link" href="deepdream.html">More</a>
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/deepdream">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+
+                    <!-- SALVATOR -->
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="salvator-header">SALVATOR COFFE</h2>
+                        <div class="icon" id="salvator-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <p class="card-text">Online shop built with Python & Django. System of products, accounts, shopping carts and deliveries.</p>
+                        <div class="project-buttons">
+                            <a class="link" href="salvator.html">More</a>
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/salvator">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEBSITE -->
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="website-header">THIS WEBSITE</h2>
+                        <div class="icon" id="website-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <p class="card-text">This tiny little website standing on HTML, CSS and JS. Fully handcrafted.</p>
+                        <div class="project-buttons">
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/portfolio.page">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+
+                    <!-- BUSINESS CARD -->
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="business-header">BUSINESS CARD PAGES</h2>
+                        <div class="icon" id="business-icon">
+                            <i class="fas fa-trademark"></i>
+                        </div>
+                        <p class="card-text">Simple business card pages of dental clinic, espresso bar and sound designer. Built using HTML, CSS, Slides Framework and my photos.</p>
+                        <div class="project-buttons">
+                            <a class="link" href="business.html">list of projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact" class="slide">
+        <div class="section" id="contact-section">
+            <h1 id="contact-header">Contact</h1>
+            <p class="contact-text">You can reach me under this address:</p>
+            <p class="contact-text">korzonek.szymon@gmail.com</p>
+            <p class="contact-text">+48 535 498 671  (pl)</p> 
+            <p class="contact-text">+354 782 0680  (is)</p>
+
+            <div id="social-icons">
+                <a class="social-links" href="https://www.linkedin.com/in/szymon-korzonek-83a3601b4/"><i class="fab fa-linkedin"></i></a>
+                <a class="social-links" href="https://www.facebook.com/szymon.korzonek"><i class="fab fa-facebook-square"></i></a>
+                <a class="social-links" href="https://www.instagram.com/umarnaraka/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+    <div id="about" class="slide">
+        <div class="section" id="contact-section">
+            <h1 class="about-header">About</h1>
+            <p class="about-text">Made in Cracow, age 26. My adventure with code started on Electronic Data Processing studies on Jagiellonian University back in 2015. After 2 years I dropped them to spent some time on Iceland, where I figured that what I want to do in my life is coding. I learned Python, worked on my portfolio and here I am - searching for the best opportunity to develop my skills in this matter.</p>
+            <p class="about-text">Up until this point I've been trough variety of jobs and work enviornments in three different countries. Native pole with English as second language, intermidiate Icelandic and basic German. Musician and former music teacher, playing guitar, piano and singing. Very much into electronic music. Two wheels lover. Huge fan of classic and modern sci-fi, both written and visual. Interested in photography (all photos used in my projects were taken by me).</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+body{
+  background-image: url("portfolio.jpg");
+  position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;}
+
+nav{
+  width: 100%;
+  position: fixed;
+  z-index: 1;}
+
+#navbar-links{
+  float: right;}
+
+small{
+  background: rgba(0, 0, 0, 0.4);}
+
+#about-link{
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 120%;
+  margin: 0 auto;}
+
+#about-link:hover{
+  color: white;}
+
+.link{
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 120%;}
+
+.link:hover{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 238, 0, 0.6);}
+
+ul li{
+  font-size: 110%;
+  letter-spacing: 3px;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;}
+
+ul li:hover{
+  border-bottom: 1px solid #ffc831;
+  list-style: none;}
+
+a:hover{
+  text-decoration: none;
+  color: white;}
+
+.content{
+  min-height: 100vh;
+  padding-bottom: 50px;}
+
+#brand{
+  color: white;
+  font-weight: 150;
+  font-size: 170%;
+  letter-spacing: 3px;}
+
+#button{
+  float: right;
+  display: none;}
+
+.toggle{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 45px;}
+
+a{
+  margin: 10px;
+   color: white;}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  color: rgb(255, 255, 255);
+  font-size: 180%;
+  font-weight: 300;}
+
+h2{
+  margin-top: 50px;
+  font-size: 150%;
+  font-weight: 200;}
+
+h3{
+  font-size: 120%;}
+
+h1, h2, h3{
+  font-weight: 300;
+  color: white;
+  padding: 1% 0% 2% 4%;
+  margin-top: 3%;
+  letter-spacing: 5px;
+  background-color: rgba(0, 0, 0, 0.1);}
+
+p{
+  margin: 10px 10px 0px 15px;
+  color: white;
+  font-size: 120%;
+  font-weight: 200;
+  line-height: 30px;}
+
+.section{
+  background-color: rgba(0, 0, 0, 0.7);}
+
+.content{
+  padding: 60px 200px 0px 200px;}
+
+.business-github-icon{
+  font-size: 120%;
+  color: rgba(255, 255, 255, 0.8);
+  margin: -10px 10px 0px 10px;}
+
+.projects-github-icon{
+  font-size: 120%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0px 0px 0px 10px;}
+
+.github-link{
+  margin-top: 2px;
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.8);}
+
+.github-link:hover{
+  color:white;}
+
+.project-buttons{
+  margin-top: 15px;}
+
+.requirements-header{
+  margin-top: 30px;}
+
+
+
+.business-links{
+  font-size: 110%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0;}
+
+.business-links:hover{
+  color: white;}
+
+.business-headers{
+  font-weight: 400; 
+  background-color:rgba(255, 255, 255, 0);;
+  margin: 40px 0px 0px 0px;}
+
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.row{
+  justify-content: center;}
+
+.column{
+  float: left;
+  width: 17vh;
+  padding: 0px 20px 20px 0px;
+  justify-content: center;}
+
+/* Style the images inside the grid */
+.column img{
+  opacity: 0.7;
+  cursor: pointer;}
+
+.column img:hover{
+  opacity: 1;}
+
+/* Clear floats after the columns */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container{
+  width: 90%;
+  position: relative;
+  display: none;}
+
+/* Expanding image text */
+#imgtext{
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+  color: white;
+  font-size: 15px;}
+
+/* Closable button inside the image */
+.closebtn{
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;}
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+  .content{
+    padding: 60px 50px 0px 50px;}
+
+  }
+
+
+
+
+
+@media (max-width: 750px){
+  #button{
+    display: block;
+    font-size: 110%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;}
+
+  .toggle{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);}
+
+  ul{
+    margin-top: 7px;
+    margin-right: -35px;
+    padding-left: 0px;
+    width: 120%;
+    display: none;}
+
+  ul li{
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(54, 54, 54);}
+
+  .active{
+    display: block;}
+
+  .content{
+    padding: 60px 0px 0px 50px;}
+  
+  .container{
+
+  }
+}
+
+
+
+@media (max-width: 750px){
+  .content{
+    padding: 50px 20px 0px 5px;}
+
+  .container{
+    width: 100%;;
+  }
+  .column{
+    width: 22.5%;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+
+
+
+
+
+
