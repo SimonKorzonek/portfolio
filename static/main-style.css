@@ -39,9 +39,10 @@ ul li:hover{
   color: white;
   font-weight: 150;
   font-size: 160%;
-  letter-spacing: 3px;}
+  letter-spacing: 3px;
+  text-decoration: none;}
 
-#button{
+#bars-button{
   float: right;
   display: none;}
 
@@ -60,7 +61,7 @@ a{
   padding: 0px 4px 0px 4px;}
 
 .slide{
-  min-height: 100vh;
+  min-height: 110vh;
   position: center;
   background-position: center center;
   background-attachment: fixed;
@@ -91,7 +92,7 @@ p{
 
 .section{
   padding: 60px 150px 0px 150px;
-  min-height: 100vh;
+  min-height: 110vh;
   text-align: center;}
 
 .welcome-header{
@@ -203,7 +204,8 @@ h1, h2, h3{
 
 .about-text{
   font-size: 140%;
-}
+  padding-bottom:20px;
+  margin: 0;}
 
 .icon{
   font-size: 400%;
@@ -306,11 +308,12 @@ h1, h2, h3{
   .section{
     padding: 45px 7px 0px 7px;}
 
-  #button{
+  #bars-button{
     display: block;
     font-size: 110%;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;}
+    padding: 10px;
+    margin: 4px 3px 0px 0px;}
 
   .card{
     margin-top: 20px;

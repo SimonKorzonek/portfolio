@@ -10,7 +10,7 @@ nav{
   position: fixed;
   z-index: 1;}
 
-#navbar-links{
+.navbar-list{
   float: right;}
 
 small{
@@ -29,12 +29,19 @@ small{
 .link{
   color: rgba(255, 255, 255, 0.8);
   padding: 5px;
-  font-size: 120%;}
+  font-size: 100%;}
+
+
 
 .link:hover{
   color: white;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 238, 0, 0.6);}
+
+
+
+#ul{
+  margin-top: 4px;}
 
 ul li{
   font-size: 110%;
@@ -42,12 +49,13 @@ ul li{
   font-weight: 300;
   background-color: rgba(0, 0, 0, 0.9);
   display: inline-block;
-  padding-top: 8px;
-  padding-bottom: 8px;}
+  padding: 8px 0px 8px 0px;}
 
 ul li:hover{
   border-bottom: 1px solid #ffc831;
   list-style: none;}
+
+
 
 a:hover{
   text-decoration: none;
@@ -63,13 +71,13 @@ a:hover{
   font-size: 170%;
   letter-spacing: 3px;}
 
-#button{
+#bars-button{
   float: right;
   display: none;}
 
 .toggle{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   height: 45px;}
 
@@ -222,11 +230,12 @@ p{
 
 
 @media (max-width: 750px){
-  #button{
+  #bars-button{
     display: block;
     font-size: 110%;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;}
+    padding: 10px;
+    margin: 4px 3px 0px 0px;}
 
   .toggle{
     display: block;
