@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Szymon Korzonek</title>
+    <title>Szymon Korzonek, developer, pyhton, flask, django, fullstack, backend</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,15 +22,6 @@
             <a id="brand" href="index.html#home">S. KORZONEK</a>
             <i id="bars-button" class="fa fa-bars" aria-hidden="true" onclick="toggle()"></i>
 
-
-
-
-
-
-
-
-
-
             <ul id="ul">
                 <li class="nav-list"><a class="nav-links" href="#home" onclick="toggle()">HOME</a></li>
                 <li class="nav-list"><a class="nav-links" href="#portfolio" onclick="toggle()">PORTFOLIO</a></li>
@@ -38,19 +29,6 @@
                 <li class="nav-list"><a class="nav-links" href="#about" onclick="toggle()">ABOUT</a></li>
             </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
         </div>
     </nav>
 
@@ -61,7 +39,7 @@
             <h1 class="welcome-header" id="welcome-h1">Szymon Korzonek</h1>
             <h2 class="welcome-header" id="welcome-h2">junior backend / fullstack developer</h2>
 
-            <p id="welcome-text">PYTHON | DJANGO | FLASK | SQL | HTML | CSS | JS | GIT</p><br>
+            <p id="welcome-text">PYTHON | DJANGO | FLASK | HTML | CSS | ML | GIT</p><br>
 
             <div style="text-align: center;">
                 <a id="welcome-link" href="#about">more about me</a>
@@ -84,9 +62,9 @@
                         <div class="icon" id="soundgram-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <p class="card-text">Simple social media app. Adressing space between Instagram and SoundCloud. Ended up with simple SM app with basic funcionalities and tons of things to add or improve.</p>
+                        <p class="card-text">Social media app built with Flask. My first project with Python. Ended up with simple SM app with basic funcionalities and tons of things to add or improve.</p>
                         <div class="project-buttons">
-                            <a class="link" href="http://umarnaraka.pythonanywhere.com">Website</a>
+                            <a class="link" href="http://umarnaraka.pythonanywhere.com/login">Website</a>
                             <a class="link" href="soundgram.html">More</a>
                             <a class="link github-link" href="https://github.com/SimonKorzonek/soundgram">GitHub</a><i class="github-icon fab fa-github"></i>
                         </div>
@@ -106,8 +84,21 @@
                     </div>
                 </div>
 
-                <!-- DEEPDREAM -->
                 <div class="row">
+                    <!-- FINDMUSICIAN -->
+                    <div class="col-md">
+                        <h2 class="portfolio-headers" id="website-header">FINDMUSICIAN</h2>
+                        <div class="icon" id="website-icon">
+                            <i class="fas fa-guitar"></i>
+                        </div>
+                        <p class="card-text">Social media platform for hireing and searching for musicians. Built using Python, Django and SQLite. Still in early stages - it's a project I'm currently working on.</p>
+                        <div class="project-buttons">
+                            <a class="link" href="findmusician.html">More</a>
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/soundgram">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+
+                    <!-- DEEPDREAM -->
                     <div class="col-md">
                         <h2 class="portfolio-headers" id="deepdream-header">DEEPDREAM</h2>
                         <div class="icon" id="deepdream-icon">
@@ -119,7 +110,9 @@
                             <a class="link github-link" href="https://github.com/SimonKorzonek/deepdream">GitHub</a><i class="github-icon fab fa-github"></i>
                         </div>
                     </div>
+                </div>
 
+                <div class="row">
                     <!-- SALVATOR -->
                     <div class="col-md">
                         <h2 class="portfolio-headers" id="salvator-header">SALVATOR COFFE</h2>
@@ -129,21 +122,8 @@
                         <p class="card-text">Online shop built with Python & Django. System of products, accounts, shopping carts and deliveries.</p>
                         <div class="project-buttons">
                             <a class="link" href="salvator.html">More</a>
+                            <a class="link" href="http://blambor.pythonanywhere.com">Website</a>
                             <a class="link github-link" href="https://github.com/SimonKorzonek/salvator">GitHub</a><i class="github-icon fab fa-github"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WEBSITE -->
-                <div class="row">
-                    <div class="col-md">
-                        <h2 class="portfolio-headers" id="website-header">THIS WEBSITE</h2>
-                        <div class="icon" id="website-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <p class="card-text">This tiny little website standing on HTML, CSS and JS. Fully handcrafted.</p>
-                        <div class="project-buttons">
-                            <a class="link github-link" href="https://github.com/SimonKorzonek/portfolio">GitHub</a><i class="github-icon fab fa-github"></i>
                         </div>
                     </div>
 
@@ -159,8 +139,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="row">
+                    <!-- WEBSITE -->
+                    <div class="col-md pb-5">
+                        <h2 class="portfolio-headers" id="website-header">THIS WEBSITE</h2>
+                        <div class="icon" id="website-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <p class="card-text">This tiny little website standing on HTML, CSS and JS. Fully handcrafted.</p>
+                        <div class="project-buttons">
+                            <a class="link github-link" href="https://github.com/SimonKorzonek/portfolio">GitHub</a><i class="github-icon fab fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -168,10 +161,9 @@
     <div id="contact" class="slide">
         <div class="section" id="contact-section">
             <h1 id="contact-header">Contact</h1>
-            <p class="contact-text">You can reach me under this address:</p>
+            <p class="contact-text">You can reach me here:</p>
             <p class="contact-text">korzonek.szymon@gmail.com</p>
-            <p class="contact-text">+48 535 498 671  (pl)</p> 
-            <p class="contact-text">+354 782 0680  (is)</p>
+            <p class="contact-text">+48 535 498 671</p> 
 
             <div id="social-icons">
                 <a class="social-links" href="https://www.linkedin.com/in/szymon-korzonek-83a3601b4/"><i class="fab fa-linkedin"></i></a>
@@ -186,8 +178,9 @@
     <div id="about" class="slide">
         <div class="section" id="contact-section">
             <h1 class="about-header">About</h1>
-            <p class="about-text">Made in Cracow, age 26. My adventure with code started on Electronic Data Processing studies on Jagiellonian University back in 2015. After 2 years I dropped them to spent some time on Iceland, where I figured that what I want to do in my life is coding. I learned Python, worked on my portfolio and here I am - searching for the best opportunity to develop my skills in this matter.</p>
-            <p class="about-text">Up until this point I've been trough variety of jobs and work enviornments in three different countries. Native pole with English as second language, intermidiate Icelandic and basic German. Musician and former music teacher, playing guitar, piano and singing. Very much into electronic music. Two wheels lover. Huge fan of classic and modern sci-fi, both written and visual. Interested in photography (all photos used in my projects were taken by me).</p>
+            <p class="about-text">Made in Cracow, age 26. My adventure with code started on Electronic Data Processing studies on Jagiellonian University in 2015. After 2 years I dropped them to move for some time to Iceland -  where I found out that what I want to do in my life, is coding. I learned Python, worked on my portfolio and here I am - searching for the best opportunity to develop my skills in this matter. I'm interested in problems and challenges of Artificial Intelligence, problem solving and making things better.</p>
+            <p class="about-text">Currently, alongside with developing one of my Django projects, I'm building my own AI framework in raw Python and NumPy only. The goal is to gain deeper understanding of what and how third-party libraries like Tensorflow are doing under their cryptic hoods.</p>
+            <p class="about-text">Native pole with English as second language, basic Icelandic and German. Musician and former music teacher, playing the guitar, the piano and singing. Very much into electronic music. Lover of offroad bikes and sport-touring motorbikes. Huge fan of classic and modern sci-fi, both written and visual. Interested in photography (all photos used in my projects were taken by me).</p>
         </div>
     </div>
 

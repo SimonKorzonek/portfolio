@@ -20,19 +20,17 @@ ul li{
   font-weight: 300;
   background-color: rgba(0, 0, 0, 0.9);
   display: inline-block;
-  padding-top: 8px;
-  padding-bottom: 8px;}
+  padding: 9px 0px 8px 0px;}
 
 ul li:hover{
-  border-bottom: 1px solid #ffc831;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.75);
   list-style: none;}
 
 .nav-links{
-  color: rgba(255, 255, 255, 0.8);}
+  color: rgba(255, 255, 255, 0.9);}
 
 .nav-links:hover{
   color: white;
-  font-weight: 300;
   text-decoration: none;}
 
 #brand{
@@ -43,8 +41,8 @@ ul li:hover{
   text-decoration: none;}
 
 #bars-button{
-  float: right;
-  display: none;}
+  display: none;
+  float: right;}
 
 .toggle{
   width: 100%;
@@ -61,7 +59,7 @@ a{
   padding: 0px 4px 0px 4px;}
 
 .slide{
-  min-height: 110vh;
+  min-height: 100vh;
   position: center;
   background-position: center center;
   background-attachment: fixed;
@@ -203,8 +201,8 @@ h1, h2, h3{
   background-color: rgba(0, 0, 0, 0.7);}
 
 .about-text{
-  font-size: 140%;
-  padding-bottom:20px;
+  font-size: 125%;
+  padding-bottom: 20px;
   margin: 0;}
 
 .icon{
@@ -279,8 +277,6 @@ h1, h2, h3{
 @media (max-width: 1200px){
   .section{
     padding: 60px 50px 0px 50px;}
-
-
 }
 
 
@@ -289,7 +285,6 @@ h1, h2, h3{
   .card{
     width: 99%;
     display: block;}
-
 }
 
 
@@ -309,6 +304,7 @@ h1, h2, h3{
     padding: 45px 7px 0px 7px;}
 
   #bars-button{
+    float: right;
     display: block;
     font-size: 110%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -344,13 +340,16 @@ h1, h2, h3{
   #my-pic{
     width: 30vh;}
 
-    #welcome-text{
-      font-size: 120%;
-      margin: 2vh 5vh 0vh 5vh;}
-  
+  #welcome-text{
+    font-size: 120%;
+    margin: 2vh 5vh 0vh 5vh;}
+
   .col{
-    display: block;
-  }
+    display: block;}
+
+  .slide{
+    background-attachment: absolute;}
+
 }
 
 
@@ -373,9 +372,6 @@ h1, h2, h3{
     margin-top: 20px;}
 
   #my-pic{
-    width: 25vh;
-
-
-  }
+    width: 25vh;}
 
 }

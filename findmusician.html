@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <div class="section">
         <nav>
             <div class='toggle'>
@@ -20,8 +21,8 @@
                 <ul id="ul" class="navbar-list">
                     <li><a href="willy.html" onclick="toggle()">WILLY</a></li>
                     <li><a href="soundgram.html" onclick="toggle()">SOUNDGRAM</a></li>
-                    <li><a href="findmusician.html" onclick="toggle()">FINDMUSICIAN</a></li>
-                    <li style="border-bottom: 2px solid rgba(211, 211, 211, 0.8);"><a href="salvator.html" onclick="toggle()">SALVATOR</a></li>
+                    <li style="border-bottom: 2px solid rgba(211, 211, 211, 0.8);;"><a href="findmusician.html" onclick="toggle()">FINDMUSICIAN</a></li>
+                    <li><a href="salvator.html" onclick="toggle()">SALVATOR</a></li>
                     <li><a href="deepdream.html" onclick="toggle()">DEEPDREAM</a></li>
                     <li><a href="business.html" onclick="toggle()">BUSINESS CARDS</a></li>
                 </ul>
@@ -31,23 +32,23 @@
         <div class="content">
             <div class="project-buttons">
                 <a class="link" href="index.html#portfolio">Back</a>
-                <a class="link" href="http://blambor.pythonanywhere.com">Website</a>
                 <a class="link" href="https://github.com/SimonKorzonek/salvator">GitHub<i class="projects-github-icon fab fa-github"></i></a>
             </div>
 
-            <h1>SALVATOR COFFE SHOP</h1>
-            <p class="pb-3">Simple e-commerce web app - my first project in Django.</p>
+            <h1>FINDMUSICIAN</h1>
+            <p class="pb-3">Social media platform for hireing and searching for musicians. LinkedIn for musicians. Built using Python, Django and SQLite. Current version does not include frontend. Still in early stages - it's a project I'm currently working on.</p>
 
             <h2>Used technologies</h2>
             <p>- Pyhton & Django</p>
             <p>- SQLite3 database</p>
-            <p class="pb-2">- HTML, CSS, Bootstrap</p>
+            <p class="pb-3">- No frontend in current version of application.</p>
 
             <h2>Functionalities</h2>
-            <p>- Systems of products, customer accounts, shopping carts and deliveries.</p>
-            <p>- Product search by name and category. Product list sorting.</p>
-            <p>- Flexible pagination - search criteria stored in session.</p>
-            <p class="pb-4">- utilizes brilliant Django ORM.</p>
+            <p>- Systems of user accounts. Additional models associated with account in M2M relatioship describing user properties like instruments, generes, preffered forms of cooperation and more.
+            <p>- System of posts, comments and their replies. Author of post/comment/reply can edit published contents. Any user is able to publish posts, comments and replies on them. Comments live in FK relationship with themselves to establish ancestors (comment/reply).</p>
+            <p>- Contact us page connected to mailer.</p>
+            <p>- Musician search system by instruments, generes, forms of cooperation, location and pricings on it's way.</p>
+            <p class="pb-4">- I'm currently working on unit tests of everything I made so far.</p>
 
         </div>
     </div>
